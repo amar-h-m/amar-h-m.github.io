@@ -1,0 +1,214 @@
+<header class="main-header">
+
+    <h1 class="site-title">AHM</h1>
+<div class="nav-container">
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="skills.html">Expertise</a></li>
+            <li><a href="projects.html">Builds & Experiments</a></li>
+            <li><a href="education.html">Academic Journey</a></li>
+            <li><a href="certificates.html"class="active">Courses & Certifications</a></li>
+            <li><a href="work.html">Industry Experience</a></li>
+        </ul>
+    </nav>
+
+    <!-- CV Button FIRST -->
+    <a href="PDFs/My CV.pdf" class="cv-btn" id="download CV">Download CV</a>
+
+    <!-- Social Icons SECOND (after CV) -->
+    <div class="header-socials">
+        <a href="https://www.linkedin.com/in/amar-h-m-9598aa297" target="_blank">
+            <img src="images/linkdin.png" class="icon">
+        </a>
+
+        <a href="https://github.com/amar-h-m" target="_blank">
+            <img src="images/Github.png" class="icon">
+        </a>
+
+        <a href="https://www.instagram.com/amar_hm_official?igsh=MTA2dm1qMjFvODduZQ==" target="_blank">
+            <img src="images/insta.png" class="icon">
+        </a>
+    </div>
+
+</div>
+
+</header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amar | Skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<section class="certifications-heading">
+    <h2>My Certifications</h2>
+    <p>Courses and programs that strengthened my technical expertise and practical skills.</p>
+</section>
+
+
+<section class="certificates-section">
+
+    <div class="cert-list">
+
+        <!-- CERTIFICATE 1 -->
+<section class="certificates-section">
+
+    <div class="cert-list">
+
+        <!-- CERTIFICATE 1 -->
+        <div class="cert-card-horizontal">
+
+            <a class="cert-img-box" href="https://www.9globes.com/" target="_blank">
+                <img src="images/9 globals logo.png" alt="">
+            </a>
+
+            <div class="cert-info">
+                <div class="cert-text">
+                    <h3>9 Global Technologies – 6 Months Offline AI/ML Program</h3>
+                    <ul class="cert-learned">
+                        <li>Python Programming</li>
+                        <li>SQL & Statistics</li>
+                        <li>Machine Learning (Supervised & Unsupervised)</li>
+                        <li>Deep Learning (ANN, CNN, RNN)</li>
+                        <li>Visualization & ML Pipeline</li>
+                        <li>Hands-on Real Projects</li>
+                    </ul>
+                </div>
+
+                <a class="view-cert-btn" href="" target="_blank">
+                    In Progress
+                </a>
+            </div>
+
+        </div>
+
+        <!-- CERTIFICATE 2 -->
+        <div class="cert-card-horizontal">
+
+            <a class="cert-img-box" href="https://www.coursera.org/" target="_blank">
+                <img src="images/Coursera logo.png" alt="">
+            </a>
+
+            <div class="cert-info">
+                <div class="cert-text">
+                    <h3>Coursera – Online Courses</h3>
+                    <ul class="cert-learned">
+                        <li>Artificial Intelligence: Overview</li>
+                        <li>Ethics of Artificial Intelligence</li>
+                        <li>AI Technologies & Platforms</li>
+                        <li>Machine Learning: Overview</li>
+                    </ul>
+                </div>
+
+                <a class="view-cert-btn" href="PDFs/Coursera Cert.pdf" target="_blank">
+                    View certificates
+                </a>
+            </div>
+
+        </div>
+
+        <!-- CERTIFICATE 3 -->
+        <div class="cert-card-horizontal">
+
+            <a class="cert-img-box" href="https://infyspringboard.onwingspan.com/web/en/login" target="_blank">
+                <img src="images/insys logo.png" alt="">
+            </a>
+
+            <div class="cert-info">
+                <div class="cert-text">
+                    <h3>Infosys Springboard – Online Courses</h3>
+                    <ul class="cert-learned">
+                        <li>IoT 101 & IoT 201</li>
+                        <li>Introduction to Python</li>
+                        <li>Linux for Beginners</li>
+                        <li>App Development in Linux</li>
+                    </ul>
+                </div>
+
+                <a class="view-cert-btn" href="PDFs/Infosys Cert.pdf" target="_blank">
+                    View Certificates
+                </a>
+            </div>
+
+        </div>
+
+        <!-- CERTIFICATE 4 -->
+        <div class="cert-card-horizontal">
+
+            <a class="cert-img-box" href="https://wadhwanifoundation.org/" target="_blank">
+                <img src="images/Wadhwani logo.jpg" alt="">
+            </a>
+
+            <div class="cert-info">
+                <div class="cert-text">
+                    <h3>Wadhwani Foundation – Ignite Bootcamp</h3>
+                    <ul class="cert-learned">
+                        <li>Gained hands-on skills in ideation, rapid prototyping, business model creation, and financial
+planning (18 hours of training).</li>
+                    </ul>
+                </div>
+
+                <a class="view-cert-btn" href="PDFs/Wadhwani Cert.pdf" target="_blank">
+                    View Certificate
+                </a>
+            </div>
+
+        </div>
+
+    </div> <!-- END cert-list -->
+
+</section>
+
+<script>
+document.getElementById("download CV").addEventListener("click", function(event) {
+    event.preventDefault(); // stop auto-download
+
+    // Step 1 → Ask confirmation
+    let confirmDownload = confirm("Do you want to download the CV of Amar H M?");
+
+    if (confirmDownload) {
+        // Step 2 → Start download
+        const link = document.createElement('a');
+        link.href = "PDFs/My CV.pdf";
+        link.download = "Amar H M CV.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // Step 3 → Success message
+        alert("CV downloaded successfully!");
+    }
+});
+</script>
+
+<footer>
+
+    <div class="contact-links">
+    <span>Contact Me - </span>
+        <a class="contact-item" href="mailto:amarhm26@gmail.com"target="_blank">
+            <img src="images/mail.png" class="icon">
+            <span>amarhm26@gmail.com</span>
+        </a>
+
+        <a class="contact-item" href="tel:+917975054260">
+            <img src="images/phone.png" class="icon"target="_blank">
+            <span>+91 7975054260</span>
+        </a>
+
+         <a class="contact-item" href="https://maps.app.goo.gl/fjJfc9bpcJmp1F6w7"target="_blank">
+            <img src="images/Location.png" class="icon">
+            <span>Bengaluru, Karnataka</span>
+        </a>
+    </div>
+    <p class="copyright">© Amar H M. Last Updated: December 9 2025</p>
+</footer>
+
+
+</html>
+
+
+

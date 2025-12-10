@@ -1,0 +1,130 @@
+<header class="main-header">
+
+    <h1 class="site-title">AHM</h1>
+<div class="nav-container">
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="skills.html">Expertise</a></li>
+            <li><a href="projects.html">Builds & Experiments</a></li>
+            <li><a href="education.html">Academic Journey</a></li>
+            <li><a href="certificates.html">Courses & Certifications</a></li>
+            <li><a href="work.html"class="active">Industry Experience</a></li>
+        </ul>
+    </nav>
+
+    <!-- CV Button FIRST -->
+    <a href="PDFs/My CV.pdf" class="cv-btn" id="download CV">Download CV</a>
+
+    <!-- Social Icons SECOND (after CV) -->
+    <div class="header-socials">
+        <a href="https://www.linkedin.com/in/amar-h-m-9598aa297" target="_blank">
+            <img src="images/linkdin.png" class="icon">
+        </a>
+
+        <a href="https://github.com/amar-h-m" target="_blank">
+            <img src="images/Github.png" class="icon">
+        </a>
+
+        <a href="https://www.instagram.com/amar_hm_official?igsh=MTA2dm1qMjFvODduZQ==" target="_blank">
+            <img src="images/insta.png" class="icon">
+        </a>
+    </div>
+
+</div>
+
+</header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amar | work</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<section class="work-heading">
+    <h2>Internships & Work Experience</h2>
+    <p>Practical industry exposure that strengthened my technical abilities and problem-solving mindset.</p>
+</section>
+
+
+<div class="work-card">
+
+    <!-- LEFT IMAGE -->
+    <div class="work-left">
+        <a href="https://www.gravityindia.com/" target="_blank">
+    <img src="images/Gravity India Logo.png" alt="Gravity India" class="work-img">
+</a>
+
+    </div>
+
+    <!-- CENTER DETAILS -->
+    <div class="work-content">
+        <h3>Gravity India Pvt. Ltd.</h3>
+        <p class="work-duration">3-Month IoT Industrial Internship (2023)</p>
+
+        <ul class="work-points">
+            <li>Attended hands-on sessions on IoT devices and automation systems.</li>
+            <li>Worked with controllers, smoke detectors, dashboards & sensors.</li>
+            <li>Learned integration, cloud monitoring & real-time alert pipelines.</li>
+        </ul>
+    </div>
+
+    <!-- RIGHT BUTTON -->
+    <a class="view-work-btn" href="certs/gravity_internship.pdf" target="_blank">
+        View Certificate
+    </a>
+
+</div>
+<script>
+document.getElementById("download CV").addEventListener("click", function(event) {
+    event.preventDefault(); // stop auto-download
+
+    // Step 1 → Ask confirmation
+    let confirmDownload = confirm("Do you want to download the CV of Amar H M?");
+
+    if (confirmDownload) {
+        // Step 2 → Start download
+        const link = document.createElement('a');
+        link.href = "PDFs/My CV.pdf";
+        link.download = "Amar H M CV.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // Step 3 → Success message
+        alert("CV downloaded successfully!");
+    }
+});
+</script>
+
+
+<footer>
+
+    <div class="contact-links">
+    <span>Contact Me - </span>
+        <a class="contact-item" href="mailto:amarhm26@gmail.com"target="_blank">
+            <img src="images/mail.png" class="icon">
+            <span>amarhm26@gmail.com</span>
+        </a>
+
+        <a class="contact-item" href="tel:+917975054260">
+            <img src="images/phone.png" class="icon"target="_blank">
+            <span>+91 7975054260</span>
+        </a>
+
+         <a class="contact-item" href="https://maps.app.goo.gl/fjJfc9bpcJmp1F6w7"target="_blank">
+            <img src="images/Location.png" class="icon">
+            <span>Bengaluru, Karnataka</span>
+        </a>
+    </div>
+    <p class="copyright">© Amar H M. Last Updated: December 9 2025</p>
+</footer>
+
+
+</html>
+
+
+
