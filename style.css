@@ -42,7 +42,7 @@ header {
 /* NAV BAR */
 .nav-container {
     width: 100%;
-    background: #2c2f33;
+    background: #0B3D91;
     padding: 12px 20px;
     display: flex;
     justify-content: space-between;
@@ -180,6 +180,7 @@ header {
     padding: 50px 20px 120px 20px;
     box-sizing: border-box;
 }
+
 .intro-text {
     width: 100%;
     text-align: center;
@@ -190,11 +191,11 @@ header {
     text-align: center !important;
 }
 
-/* ⭐ UPDATED HERO SECTION ⭐ */
+/* HERO SECTION */
 .hero-section {
     display: flex;
-    justify-content: center;   /* centers horizontally */
-    align-items: center;       /* centers vertically */
+    justify-content: center;
+    align-items: center;
     gap: 50px;
     padding: 40px 20px;
 }
@@ -207,7 +208,7 @@ header {
 }
 
 .hero-right {
-    text-align: center;  /* centers the H1 */
+    text-align: center;
     max-width: 600px;
 }
 
@@ -223,7 +224,7 @@ header {
     text-align: center;
 }
 
-/* LEFT IMAGE (OLD) */
+/* LEFT IMAGE */
 .left-image {
     width: 800px;
     height: 400px;
@@ -260,7 +261,8 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background:#25282b;
+    background: #0B3D91;
+    border-top: 2px solid #082c6c;
     text-align: center;
     padding: 2px 0;
     z-index: 1000;
@@ -323,7 +325,6 @@ footer a:active,
 footer a:hover {
     color: white !important;
 }
-
 
 /* SKILLS TITLE */
 .skills-title {
@@ -841,5 +842,6 @@ footer a:hover {
     background: #004ec2;
     transform: translateY(-2px);
 }
+
 
 
