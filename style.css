@@ -26,7 +26,7 @@ header {
     top: 10px;
     right: 20px;
     font-size: 13px;
-    color: #efe6e6;
+    color: #0B3D91;
     opacity: 0.85;
     font-weight: 500;
 }
@@ -841,4 +841,5 @@ footer a:hover {
     background: #004ec2;
     transform: translateY(-2px);
 }
+
 
